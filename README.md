@@ -58,6 +58,7 @@ This is a bit of an experiment in writing web apps with the help of ChatGPT4, an
 
     ```bash
     cargo install diesel_cli --no-default-features --features postgres
+    asdf reshim
     ```
 
     This command installs the Diesel command-line interface, which you'll use to run tasks such as database migrations.
