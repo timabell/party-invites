@@ -66,8 +66,11 @@ This is a bit of an experiment in writing web apps with the help of ChatGPT4, an
 1. Run database migrations:
 
     ```bash
-    diesel migration run
+    psql postgres://postgres:mysecretpassword@localhost/ -c 'create database party_invites;'
+    DATABASE_URL=postgres://postgres:mysecretpassword@localhost/party_invites diesel migration run
     ```
+
+    If you get the rather confusing "Could not connect to database via ...: Invalid connection url for multiconnection" error it could be anything that means it can't connect to either postgres or the specified database.
 
 1. Start the application:
 
