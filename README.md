@@ -78,6 +78,22 @@ This is a bit of an experiment in writing web apps with the help of ChatGPT4, an
     cargo run
     ```
 
+## Inspecting the database
+
+```
+$ psql postgres://postgres:mysecretpassword@localhost/party_invites
+party_invites=# \dt
+                    List of relations
+┌────────┬────────────────────────────┬───────┬──────────┐
+│ Schema │            Name            │ Type  │  Owner   │
+├────────┼────────────────────────────┼───────┼──────────┤
+│ public │ __diesel_schema_migrations │ table │ postgres │
+│ public │ users                      │ table │ postgres │
+└────────┴────────────────────────────┴───────┴──────────┘
+(2 rows)
+```
+
+
 ## License
 
 Copyright Tim Abell 2023 all rights reserved. This is not open source software.
