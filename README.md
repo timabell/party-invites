@@ -25,7 +25,7 @@ This is a bit of an experiment in writing web apps with the help of ChatGPT4, an
     cd party_invites
     ```
 
-2. Install PostgreSQL (if not installed):
+1. Install PostgreSQL (if not installed):
 
     1. native:
 
@@ -48,19 +48,27 @@ This is a bit of an experiment in writing web apps with the help of ChatGPT4, an
 
         Make sure to update your Diesel setup to connect to PostgreSQL with the correct host (localhost if running Docker on the same machine), port (5432), and password.
 
-3. Install the necessary Rust dependencies:
+1. Install the necessary Rust dependencies:
 
     ```bash
     cargo build
     ```
 
-4. Run database migrations:
+4. Install Diesel CLI:
+
+    ```bash
+    cargo install diesel_cli --no-default-features --features postgres
+    ```
+
+    This command installs the Diesel command-line interface, which you'll use to run tasks such as database migrations.
+
+1. Run database migrations:
 
     ```bash
     diesel migration run
     ```
 
-5. Start the application:
+1. Start the application:
 
     ```bash
     cargo run
