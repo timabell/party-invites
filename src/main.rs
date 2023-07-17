@@ -1,6 +1,12 @@
-#[macro_use] extern crate rocket;
+#[macro_use]
+extern crate rocket;
+#[macro_use]
+extern crate diesel;
+
 mod models;
 mod routes;
+mod schema;
+mod db;
 
 #[launch]
 fn rocket() -> _ {
