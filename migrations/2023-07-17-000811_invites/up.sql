@@ -1,0 +1,6 @@
+CREATE TABLE invites (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    phone VARCHAR NOT NULL,
+    status INTEGER NOT NULL
+);
