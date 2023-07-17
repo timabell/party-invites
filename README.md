@@ -8,6 +8,12 @@ Here's the transcript: <https://chat.openai.com/share/7e3fe058-208c-4300-b975-cd
 
 In the end I hit a wall with GPT as it started to forget the context that had been built up and start to produce random and unhelpful outputs. To follow the journey take a look at the [git log](https://github.com/timabell/party-invites/commits/main) (17 July 2023, I don't promise to leave this alone). In total 3 hours elapsed while the tennis was on. In some ways that felt faster, but in other ways it felt like I was wasting time learning the tech properly. I think rather than trying to get GPT to write everything (which appears to be futile currently), it would be better to use GPT to help research some possibilities and suggest some approaches, and then go and read the getting started guides of the relevant crates (such as Rocket and Diesel) and just build manually from there. Then possibly return to GPT to get it to generate specific entities such as `models/invite.rs` and the matching migration sql.
 
+## Summary
+
+GPT4 + Rust Web App =
+
+![an attempt was made - racoon fail gif](https://media.tenor.com/BRBbAavYBh8AAAAM/funny-animals-fail.gif)
+
 ## Features
 
 - Create and manage party events
