@@ -4,6 +4,8 @@ Party Invites is a server-rendered web application built with Rust. It uses Rock
 
 This is a bit of an experiment in writing web apps with the help of ChatGPT4, and a bit of a hobby project.
 
+Here's the transcript: <https://chat.openai.com/share/7e3fe058-208c-4300-b975-cdb646156c85> ([cached GPT transcript](gpt-log.txt))
+
 ## Features
 
 - Create and manage party events
